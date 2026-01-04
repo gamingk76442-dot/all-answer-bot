@@ -4,7 +4,8 @@ import { ChatInput } from "@/components/ChatInput";
 import { WelcomeScreen } from "@/components/WelcomeScreen";
 import { useChat } from "@/hooks/useChat";
 import { Button } from "@/components/ui/button";
-import { RotateCcw, Sparkles } from "lucide-react";
+import { RotateCcw } from "lucide-react";
+import chatbotLogo from "@/assets/chatbot-logo.ico";
 
 const Index = () => {
   const { messages, isLoading, sendMessage, clearMessages } = useChat();
@@ -25,8 +26,8 @@ const Index = () => {
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 border-b border-border bg-card/50 backdrop-blur-sm">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center glow-sm">
-            <Sparkles className="w-5 h-5 text-primary-foreground" />
+          <div className="w-9 h-9 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center glow-sm overflow-hidden">
+            <img src={chatbotLogo} alt="AI Chat" className="w-6 h-6 object-contain" />
           </div>
           <div>
             <h1 className="font-semibold text-lg leading-tight">AI Chat</h1>
