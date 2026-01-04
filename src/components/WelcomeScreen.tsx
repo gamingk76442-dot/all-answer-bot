@@ -1,4 +1,5 @@
-import { Sparkles, Code, BookOpen, Lightbulb } from "lucide-react";
+import { Code, BookOpen, Lightbulb } from "lucide-react";
+import chatbotLogo from "@/assets/chatbot-logo.ico";
 
 const suggestions = [
   {
@@ -29,8 +30,8 @@ export function WelcomeScreen({ onSuggestionClick }: WelcomeScreenProps) {
         Hello, I'm your AI Assistant
       </h1>
       
-      <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6 glow">
-        <Sparkles className="w-10 h-10 text-primary-foreground" />
+      <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6 glow overflow-hidden">
+        <img src={chatbotLogo} alt="AI Assistant" className="w-12 h-12 object-contain" />
       </div>
       
       <p className="text-muted-foreground mb-10 max-w-md">
