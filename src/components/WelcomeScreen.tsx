@@ -25,13 +25,14 @@ interface WelcomeScreenProps {
 export function WelcomeScreen({ onSuggestionClick }: WelcomeScreenProps) {
   return (
     <div className="flex flex-col items-center justify-center h-full text-center px-4 animate-fade-in">
+      <h1 className="text-3xl font-bold mb-6">
+        Hello, I'm your AI Assistant
+      </h1>
+      
       <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6 glow">
         <Sparkles className="w-10 h-10 text-primary-foreground" />
       </div>
       
-      <h1 className="text-3xl font-bold mb-2">
-        Hello, I'm your AI Assistant
-      </h1>
       <p className="text-muted-foreground mb-10 max-w-md">
         I can help you with virtually anything. Ask me questions, get explanations, write code, or just have a conversation.
       </p>
