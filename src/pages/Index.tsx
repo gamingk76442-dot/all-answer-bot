@@ -27,7 +27,7 @@ const Index = () => {
       <header className="flex items-center justify-between px-6 py-4 border-b border-border bg-card/50 backdrop-blur-sm">
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center glow-sm overflow-hidden">
-            <img src={chatbotLogo} alt="AI Chat" className="w-6 h-6 object-contain" />
+            <img src={chatbotLogo} alt="AI Chat" className="w-6 h-6 object-contain m-auto" />
           </div>
           <div>
             <h1 className="font-semibold text-lg leading-tight">AI Chat</h1>
